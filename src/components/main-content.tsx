@@ -27,6 +27,9 @@ function MainContant({ isRightSidebarOpen }: Props) {
             I build beautiful, responsive, and user-friendly web applications. I
             build beautiful, responsive, and user-friendly web applications. I
             build beautiful, responsive, and user-friendly web applications. I
+            build beautiful, responsive, and user-friendly web applications. I
+            build beautiful, responsive, and user-friendly web applications. I
+            build beautiful, responsive, and user-friendly web applications. I
           </p>
         </div>
       </section>
