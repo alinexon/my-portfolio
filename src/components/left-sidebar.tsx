@@ -252,22 +252,6 @@ function LeftSidebar() {
                 </ul>
               </div>
             </div>{" "}
-            <div className="flex flex-row gap-5">
-              <div>
-                <ul>
-                  <li>Residence:</li>
-                  <li>City:</li>
-                  <li>Age:</li>
-                </ul>
-              </div>
-              <div dir="rtl" className="text-gray-600">
-                <ul>
-                  <li>Afghanistan</li>
-                  <li>Kabul</li>
-                  <li>28</li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </aside>
