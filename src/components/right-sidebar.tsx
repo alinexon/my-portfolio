@@ -8,6 +8,7 @@ import {
   PenTool,
   Settings,
   Menu,
+  X,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
@@ -33,21 +34,42 @@ function RightSidebar({ onToggle }: Props) {
     onToggle(isOpen);
   }, [isOpen, onToggle]);
 
+  // Only apply margin shift on large screens
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1024) {
+        // On small screens, don't shift the main content
+        onToggle(false);
+      } else {
+        // On large screens, shift based on sidebar state
+        onToggle(isOpen);
+      }
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [isOpen, onToggle]);
+
   return (
     <>
       {/* Toggle Button */}
-      <div className="fixed top-4 right-4 z-50">
+      <div className=" top-4 right-4 z-50 absolute">
         <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
-          <Menu />
+          {isOpen ? <X /> : <Menu />}
         </Button>
       </div>
 
       {/* Sidebar */}
       <aside
         className={cn(
-          "fixed top-0 right-0 h-full bg-white shadow-lg transition-all duration-300 z-40",
-          isOpen ? "w-64" : "w-0"
+          " top-0 right-0 h-full bg-white shadow-lg transition-all duration-300 z-40 absolute",
+          isOpen ? "w-56" : "w-0"
         )}
+        style={{ width: isOpen ? "14rem" : "0" }}
       >
         <div className="flex flex-col h-full">
           <div className="p-4 font-semibold text-sm">
