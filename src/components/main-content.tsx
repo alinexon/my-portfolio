@@ -10,8 +10,8 @@ type Props = {
 function MainContent({ isRightSidebarOpen }: Props) {
   return (
     <>
-      <header className=" top-0 left-0 w-full lg:max-w-[1500px] h-20 absolute bg-white shadow-lg dark:bg-zinc-900 dark:shadow-2xl z-20 flex justify-center items-center">
-        <div className="lg:ml-96 -mt-2 ml-28">
+      <header className=" fixed lg:absolute top-0 left-0 w-full lg:max-w-[1500px] h-20   bg-white shadow-lg dark:bg-zinc-900 dark:shadow-2xl z-20 flex justify-center items-center">
+        <div className="m-auto ">
           <ModeToggle />
         </div>
       </header>
