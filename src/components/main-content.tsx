@@ -9,7 +9,7 @@ type Props = {
 function MainContent({ isRightSidebarOpen }: Props) {
   return (
     <main
-      className={`transition-all duration-300 px-16 py-16 min-h-screen relative z-10 lg:ml-62 ${
+      className={`transition-all duration-300 px-16 py-16 min-h-screen relative z-10 lg:ml-64 ${
         isRightSidebarOpen ? "lg:translate-x-[-12rem]" : "lg:translate-x-0"
       }`}
     >
