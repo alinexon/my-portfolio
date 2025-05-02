@@ -56,7 +56,7 @@ function RightSidebar({ onToggle }: Props) {
     <>
       {/* Toggle Button */}
       <div className="top-4 right-4 z-30 absolute transition-all duration-300">
-        <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
+        <Button variant="ghost" size="icon" onClick={() => setIsOpen(true)}>
           <div
             className={`transition-all duration-200 ease-in-out ${
               isOpen ? "opacity-0 scale-90" : "opacity-100 scale-100"
@@ -66,9 +66,8 @@ function RightSidebar({ onToggle }: Props) {
           </div>
         </Button>
       </div>
-
       <div className="top-4 right-44 z-30 absolute transition-all duration-300">
-        <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
+        <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
           <div
             className={`transition-all duration-300 ease-in-out ${
               isOpen ? "opacity-100 scale-100" : "opacity-0 scale-90"
@@ -82,20 +81,22 @@ function RightSidebar({ onToggle }: Props) {
       {/* Sidebar */}
       <aside
         className={cn(
-          " top-0 right-0 h-full bg-white shadow-lg transition-all duration-300 z-25 absolute",
+          "top-0 right-0 h-full bg-white dark:bg-zinc-800 shadow-lg transition-all duration-300 z-25 absolute",
           isOpen ? "w-56" : "w-0"
         )}
         style={{ width: isOpen ? "14rem" : "0" }}
       >
         <div className="flex flex-col h-full">
-          <div className="p-4 font-semibold text-sm">{isOpen ? "" : ""}</div>
+          <div className="p-4 font-semibold text-sm text-gray-800 dark:text-gray-100">
+            {isOpen ? "" : ""}
+          </div>
           <nav className="flex-1 overflow-y-auto">
             <ul className="space-y-2 p-2">
               {navItems.map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="flex items-center gap-3 p-2 rounded hover:bg-muted transition"
+                    className="flex items-center gap-3 p-2 rounded hover:bg-gray-100 dark:hover:bg-zinc-700 transition text-gray-800 dark:text-gray-100"
                   >
                     <item.icon className="h-5 w-5" />
                     {isOpen && <span className="text-sm">{item.name}</span>}
