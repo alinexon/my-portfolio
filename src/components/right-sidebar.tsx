@@ -86,7 +86,7 @@ function RightSidebar({ onToggle }: Props) {
         )}
         style={{ width: isOpen ? "14rem" : "0" }}
       >
-        <div className="flex flex-col h-full">
+        <div className="flex mt-20 flex-col h-full">
           <div className="p-4 font-semibold text-sm text-gray-800 dark:text-gray-100">
             {isOpen ? "" : ""}
           </div>
