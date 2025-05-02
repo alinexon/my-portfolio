@@ -10,14 +10,14 @@ type Props = {
 function MainContent({ isRightSidebarOpen }: Props) {
   return (
     <>
-      <header className="h-16 mr-16">
-        <div className="sm:ml-8 lg:ml-96 mt-2 ml-40 dark:sm:ml-8 dark:lg:ml-96">
+      <header className=" top-0 left-0 w-full lg:max-w-[1500px] h-20 absolute bg-white shadow-lg dark:bg-zinc-900 dark:shadow-2xl z-20 flex justify-center items-center">
+        <div className="lg:ml-96 -mt-2 ml-28">
           <ModeToggle />
         </div>
       </header>
 
       <main
-        className={`transition-all duration-300 px-16 py-16 min-h-screen relative z-10 lg:ml-64 ${
+        className={`transition-all duration-300 px-16 py-16 pt-32 min-h-screen relative z-10 lg:ml-64 ${
           isRightSidebarOpen ? "lg:translate-x-[-12rem]" : "lg:translate-x-0"
         }`}
       >
