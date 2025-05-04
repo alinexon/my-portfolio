@@ -213,3 +213,36 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes heartbeatWave {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(215, 212, 205, 0.5);
+  }
+  40% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 2px rgba(215, 212, 205, 0.8);
+  }
+  60% {
+    transform: scale(1.01);
+    box-shadow: 0 0 0 4px rgba(215, 212, 205, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(215, 212, 205, 0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.animate-zoomIn {
+  animation: zoomIn 0.4s ease-out;
+}
