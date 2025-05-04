@@ -28,7 +28,9 @@ function MainContent({ isRightSidebarOpen, showImage, setShowImage }: Props) {
             className="fixed inset-0 bg-black bg-opacity-80 w-full h-full shadow-lg flex items-center justify-center z-100 cursor-pointer transition-all"
             onClick={() => setShowImage(false)}
           >
-            <img
+            <Image
+              width={1200}
+              height={1200}
               src="/images/profileimg.png"
               alt="Zoomed profile"
               className="w-full h-full object-contain animate-zoomIn"
