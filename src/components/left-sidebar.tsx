@@ -48,7 +48,7 @@ function LeftSidebar({ setZoomed }: Props) {
       {/* Sidebar */}
       <aside
         className={cn(
-          "top-0 left-0 h-full bg-white dark:bg-zinc-900 shadow-md dark:shadow-lg transition-transform duration-300 absolute z-40 lg:block",
+          "top-0 left-0  bg-white dark:bg-zinc-900 shadow-md dark:shadow-lg transition-transform duration-300 absolute z-40 lg:block",
           "lg:translate-x-0",
           isOpen ? "translate-x-0" : "-translate-x-full"
         )}
