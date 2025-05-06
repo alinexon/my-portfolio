@@ -4,6 +4,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { ModeToggle } from "./mode-toggle";
 import { Button } from "./ui/button";
+import { ChevronRight } from "lucide-react";
 
 type Props = {
   isRightSidebarOpen: boolean;
@@ -27,7 +28,7 @@ function MainContent({ isRightSidebarOpen, showImage, setShowImage }: Props) {
       </header>
 
       <main
-        className={`transition-all duration-300 px-16 py-16 pt-28 min-h-screen relative z-10 lg:ml-64 ${
+        className={`transition-all duration-300 px-4 sm:px-8 md:px-10 lg:px-16 py-8 sm:py-10  md:py-12 lg:pt-28 pt-24 min-h-screen relative z-10 lg:ml-64 ${
           isRightSidebarOpen ? "lg:translate-x-[-12rem]" : "lg:translate-x-0"
         }`}
       >
@@ -120,6 +121,154 @@ function MainContent({ isRightSidebarOpen, showImage, setShowImage }: Props) {
                 </li>
               ))}
             </ul>
+          </div>
+        </section>
+        <section id="services">
+          <h2 className="font-bold text-gray-800 dark:text-white mb-5 text-xl text-center lg:text-left">
+            My Service
+          </h2>
+
+          <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="flex flex-col gap-3 bg-zinc-300 dark:bg-zinc-900 p-5  w-full">
+              <h2 className="text-gray-900 font-bold dark:text-white">
+                Web Development
+              </h2>
+              <p className="text-sm leading-6 text-gray-700 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem
+                ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
+                dolor sit amet consectetur adipisicing elit
+              </p>
+              <div className="flex items-center">
+                <a
+                  href="contact"
+                  className="group font-bold text-yellow-700 dark:text-yellow-400 uppercase text-sm hover:text-yellow-600 hover:drop-shadow-[0_0_3px_rgba(234,179,8,0.1)] transition duration-300 flex items-center"
+                >
+                  order now{" "}
+                  <ChevronRight
+                    size={15}
+                    strokeWidth={2}
+                    className="ml-1 text-yellow-700 dark:text-yellow-600 transition duration-500 transform group-hover:translate-x-1"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col gap-3 bg-zinc-300 dark:bg-zinc-900 p-5  w-full">
+              <h2 className="text-gray-900 font-bold dark:text-white">
+                Web Development
+              </h2>
+              <p className="text-sm leading-6 text-gray-700 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem
+                ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
+                dolor sit amet consectetur adipisicing elit
+              </p>
+              <div className="flex items-center">
+                <a
+                  href="contact"
+                  className="group font-bold text-yellow-700 dark:text-yellow-400 uppercase text-sm hover:text-yellow-600 hover:drop-shadow-[0_0_3px_rgba(234,179,8,0.1)] transition duration-300 flex items-center"
+                >
+                  order now{" "}
+                  <ChevronRight
+                    size={15}
+                    strokeWidth={2}
+                    className="ml-1 text-yellow-700 dark:text-yellow-600 transition duration-500 transform group-hover:translate-x-1"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col gap-3 bg-zinc-300 dark:bg-zinc-900 p-5  w-full">
+              <h2 className="text-gray-900 font-bold dark:text-white">
+                Web Development
+              </h2>
+              <p className="text-sm leading-6 text-gray-700 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem
+                ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
+                dolor sit amet consectetur adipisicing elit
+              </p>
+              <div className="flex items-center">
+                <a
+                  href="contact"
+                  className="group font-bold text-yellow-700 dark:text-yellow-400 uppercase text-sm hover:text-yellow-600 hover:drop-shadow-[0_0_3px_rgba(234,179,8,0.1)] transition duration-300 flex items-center"
+                >
+                  order now{" "}
+                  <ChevronRight
+                    size={15}
+                    strokeWidth={2}
+                    className="ml-1 text-yellow-700 dark:text-yellow-600 transition duration-500 transform group-hover:translate-x-1"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col gap-3 bg-zinc-300 dark:bg-zinc-900 p-5  w-full">
+              <h2 className="text-gray-900 font-bold dark:text-white">
+                Web Development
+              </h2>
+              <p className="text-sm leading-6 text-gray-700 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem
+                ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
+                dolor sit amet consectetur adipisicing elit
+              </p>
+              <div className="flex items-center">
+                <a
+                  href="contact"
+                  className="group font-bold text-yellow-700 dark:text-yellow-400 uppercase text-sm hover:text-yellow-600 hover:drop-shadow-[0_0_3px_rgba(234,179,8,0.1)] transition duration-300 flex items-center"
+                >
+                  order now{" "}
+                  <ChevronRight
+                    size={15}
+                    strokeWidth={2}
+                    className="ml-1 text-yellow-700 dark:text-yellow-600 transition duration-500 transform group-hover:translate-x-1"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col gap-3 bg-zinc-300 dark:bg-zinc-900 p-5  w-full">
+              <h2 className="text-gray-900 font-bold dark:text-white">
+                Web Development
+              </h2>
+              <p className="text-sm leading-6 text-gray-700 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem
+                ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
+                dolor sit amet consectetur adipisicing elit
+              </p>
+              <div className="flex items-center">
+                <a
+                  href="contact"
+                  className="group font-bold text-yellow-700 dark:text-yellow-400 uppercase text-sm hover:text-yellow-600 hover:drop-shadow-[0_0_3px_rgba(234,179,8,0.1)] transition duration-300 flex items-center"
+                >
+                  order now{" "}
+                  <ChevronRight
+                    size={15}
+                    strokeWidth={2}
+                    className="ml-1 text-yellow-700 dark:text-yellow-600 transition duration-500 transform group-hover:translate-x-1"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col gap-3 bg-zinc-300 dark:bg-zinc-900 p-5  w-full">
+              <h2 className="text-gray-900 font-bold dark:text-white">
+                Web Development
+              </h2>
+              <p className="text-sm leading-6 text-gray-700 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem
+                ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
+                dolor sit amet consectetur adipisicing elit
+              </p>
+              <div className="flex items-center">
+                <a
+                  href="contact"
+                  className="group font-bold text-yellow-700 dark:text-yellow-400 uppercase text-sm hover:text-yellow-600 hover:drop-shadow-[0_0_3px_rgba(234,179,8,0.1)] transition duration-300 flex items-center"
+                >
+                  order now{" "}
+                  <ChevronRight
+                    size={15}
+                    strokeWidth={2}
+                    className="ml-1 text-yellow-700 dark:text-yellow-600 transition duration-500 transform group-hover:translate-x-1"
+                  />
+                </a>
+              </div>
+            </div>
+
+            {/* Repeat for other cards */}
           </div>
         </section>
       </main>
